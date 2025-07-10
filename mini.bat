@@ -323,3 +323,4 @@ RMDIR /S /Q "%programdata%\Blizzard Entertainment"
 RMDIR /S /Q "%USERPROFILE%\Documents\Call of Duty Modern Warfare"
 reg delete "HKLM\Software\WOW6432Node\Blizzard Entertainment" /f
 reg delete "HKCU\Software\Blizzard Entertainment" /f"
+cls
