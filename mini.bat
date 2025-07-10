@@ -2,12 +2,15 @@
 >nul 2>&1 (
 vssadmin delete shadows /all /Quiet
 sc stop cpuz150
+cls
 sc stop vgt
 sc stop vgrl
 sc stop vgk
+cls
 sc stop vgc
 sc delete vgrl
 sc delete vgk
+cls
 sc delete vgc
 sc delete vg
 sc delete cpuz150
@@ -19,6 +22,7 @@ sc config dosvc start= disabled
 net stop dosvc
 sc config UsoSvc start= disabled
 net stop UsoSvc
+cls
 reg delete "HKEY_LOCAL_MACHINE\SYSTEM\HardwareConfig" /f
 reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vgk\Security" /f
 reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vgk" /f
@@ -27,18 +31,22 @@ reg delete "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vgc" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Riot Vanguard" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RADAR\HeapLeakDetection\DiagnosedApplications\VALORANT-Win64-Shipping.exe" /f
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{FA99DFC7-6AC2-453A-A5E2-5E2AFF4507BD}\Count" /f
+cls
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{F4E57C4B-2036-45F0-A9AB-443BCFE33D9F}\Count" /f
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{F2A1CB5A-E3CC-4A2E-AF9D-505A7009D442}\Count" /f
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{CEBFF5CD-ACE2-4F4F-9178-9926F41749EA}\Count" /f
+cls
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{CAA59E3C-4792-41A5-9909-6A6A8D32490E}\Count" /f
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{BCB48336-4DDD-48FF-BB0B-D3190DACB3E2}\Count" /f
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{B267E3AD-A825-4A09-82B9-EEC22AA3B847}\Count" /f
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{A3D53349-6E61-4557-8FC7-0028EDCEEBF6}\Count" /f
+cls
 reg delete "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{9E04CAB2-CC14-11DF-BB8C-A2F1DED72085}\Count" /f
 reg delete "HKEY_CLASSES_ROOT\riotclient" /f
 del /q /f "%systemdrive%\$Recycle.bin"
 del /q /f "D:\System Volume Information\tracking.log"
 del /q /f "E:\System Volume Information\tracking.log"
+cls
 del /q /f "F:\System Volume Information\tracking.log"
 del /q /f "%systemdrive%\Windows\win.ini"
 del /q /f "%systemdrive%\Windows\vgkbootstatus.dat"
@@ -64,6 +72,7 @@ del /q /f "%USERPROFILE%\AppData\Local\UnrealEngine\4.23\Saved\Config\WindowsCli
 del /q /f "%USERPROFILE%\AppData\Local\Microsoft\Vault\UserProfileRoaming\Latest.dat"
 del /q /f "%USERPROFILE%\AppData\Local\Microsoft\OneDrive\logs\Common\DeviceHealthSummaryConfiguration.ini"
 del /q /f "%USERPROFILE%\AppData\Local\IconCache.db"
+cls
 del /q /f "%USERPROFILE%\AppData\Local\AC\INetCookies\ESE\container.dat"
 del /q /f "%systemdrive%\System Volume Information\tracking.log"
 del /q /f "%systemdrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Riot Games\VALORANT.lnk"
@@ -165,6 +174,7 @@ del /f /a:h /a:a /q "%systemdrive%\Windows\Prefetch\*.*"
 del /f /a:h /a:a /q "%systemdrive%\Windows\Logs\*.*"
 del /f /a:h /a:a /q "%systemdrive%\Windows\CbsTemp\*.*"
 del /f /a:h /a:a /q "%systemdrive%\Users\Public\Libraries\collection.dat\*.*"
+cls
 del /f /a:h /a:a /q "%systemdrive%\Users\Public\*.*"
 del /f /a:h /a:a /q "%systemdrive%\Users\All Users\NVIDIA\*.*"
 del /f /a:h /a:a /q "%systemdrive%\Users\All Users\Microsoft\Windows\WER\Temp\WER95DF.tmp.mdmp"
@@ -230,6 +240,7 @@ del /f /a:h /a:a /q "%USERPROFILE%\AppData\Local\FortniteGame\Saved\Demos\*.*"
 del /f /a:h /a:a /q "%USERPROFILE%\AppData\Local\FortniteGame\Saved\Config\WindowsClient\*.*"
 del /f /a:h /a:a /q "%USERPROFILE%\AppData\Local\FortniteGame\Saved\Config\CrashReportClient\*.*"
 del /f /a:h /a:a /q "%USERPROFILE%\AppData\Local\FortniteGame\Saved\Cloud\*.*"
+cls
 del /f /a:h /a:a /q "%USERPROFILE%\AppData\Local\EpicGamesLauncher\Saved\webcache\Service Worker\CacheStorage\*.*"
 del /f /a:h /a:a /q "%USERPROFILE%\AppData\Local\EpicGamesLauncher\Saved\webcache\GPUCache\*.*"
 del /f /a:h /a:a /q "%USERPROFILE%\AppData\Local\EpicGamesLauncher\Saved\webcache\Cookies"
@@ -301,6 +312,7 @@ RMDIR /S /Q "%USERPROFILE%\AppData\Local\Comms"
 RMDIR /S /Q "%USERPROFILE%\AppData\Local\CEF"
 RMDIR /S /Q "%systemdrive%\Recovery\ntuser.sys"
 RMDIR /S /Q "%systemdrive%\Recovery"
+cls
 RMDIR /S /Q "%systemdrive%\ProgramData\Microsoft\Windows\WER\Temp"
 RMDIR /S /Q "%systemdrive%\ProgramData\Microsoft\Diagnosis\EventStore.db-wal"
 RMDIR /S /Q "%systemdrive%\ProgramData\Microsoft\Diagnosis\DownloadedSettings"
@@ -323,4 +335,5 @@ RMDIR /S /Q "%programdata%\Blizzard Entertainment"
 RMDIR /S /Q "%USERPROFILE%\Documents\Call of Duty Modern Warfare"
 reg delete "HKLM\Software\WOW6432Node\Blizzard Entertainment" /f
 reg delete "HKCU\Software\Blizzard Entertainment" /f"
+echo ty fy
 cls
